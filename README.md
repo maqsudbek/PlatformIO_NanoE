@@ -9,7 +9,7 @@ This is a PlatformIO project template specifically configured for the Arduino Na
 4. Select the desired environment from the PlatformIO toolbar or `platformio.ini` file.
    1. Hint: Open the file `platformio.ini` file and save (Ctrl+S) to refresh the environment picker and libraries.
 5. Source files are located in the `src/` directory. Each environment corresponds to a different source file.
-6. Build and upload the code to your Arduino Nano Every board.
+6. Build and upload the code to your Arduino Nano Every board: Press `F1`, type `PlatformIO: Upload`, and hit `Enter`.
 7. Open the Serial Monitor to view output from the board.
 8. Modify the source files as needed for your project.
 9.  Add Libraries via PlatformIO `platformio.ini`
