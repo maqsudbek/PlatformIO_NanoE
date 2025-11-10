@@ -1,10 +1,17 @@
+#define ARDUINO_AVR_NANO_EVERY
+
 #include <Arduino.h>
+#include <BoardSupport.h>
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
   delay(1000); // Wait for serial to initialize
   Serial.println("Hello, Arduino!");
+
+  boardSupportInitialize(); // Hook for board-specific setup logic
+  Serial.print("Board support library detected: ");
+  Serial.println(boardSupportName());
 
   pinMode(LED_BUILTIN, OUTPUT); // Set pin 13 as output
 }
